@@ -16,14 +16,12 @@ class main:
                 w_list.append(item)
 
         w_list = [i.split('\n', 1)[0] for i in w_list]
-#       map(str.lower,w_list)
         r_word = random.choice(w_list)
         return r_word
     
 
     def user_guess():
         guess = input("Please enter the letter you guess: ")
-        map(str.lower, guess)
         return guess
 
     def result(r_word):
